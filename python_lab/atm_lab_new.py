@@ -20,8 +20,8 @@ def auth():
         if id == user["account_id"] and user["pin"] == pin:
             print(f"Welcome {user["username"]}")
             return user # exists => positive => True => 1
-        else:
-            return None # non-exisits => negative => False => 0
+    
+    return None # non-exisits => negative => False => 0
 
 def withdraw():
     user_account = auth()
